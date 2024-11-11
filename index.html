@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-cener mainTitle" style="color: #000;">Dynamic Resume Builder</h1>
+        </div>
+    <div class="container mx-auto p-6 mainContainer">
+        <form id="resumeForm" class="bg-white p-6 rounded-lg shadow-md space-y-6">
+            <h3>Add your resume details here </h3>
+            <fieldset class="space-y-4">
+                <legend class="text-xl font-semibold text-gray-800">Personal Information</legend>
+                <label for="name" class="block text-gray-700">Name </label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                
+                <label for="email" class="block text-gray-700">Email Address </label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                
+                <label for="phone" class="block text-gray-700">Mobile Phone Number </label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                
+                <label for="address" class="block text-gray-700">Address </label>
+                <input type="text" id="address" name="address" required placeholder="Enter your address" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                
+                <label for="profilePicture" class="block text-gray-700">Profile Picture </label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </fieldset>
+
+            <fieldset class="space-y-4">
+                <legend class="text-xl font-semibold text-gray-800">Education</legend>
+                <textarea id="education" name="education" rows="4" required placeholder="Enter your education details" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            </fieldset>
+
+            <fieldset class="space-y-4">
+                <legend class="text-xl font-semibold text-gray-800">Experience</legend>
+                <textarea id="experience" name="experience" rows="4" required placeholder="Enter your work experience" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            </fieldset>
+
+            <fieldset class="space-y-4">
+                <legend class="text-xl font-semibold text-gray-800">Skills</legend>
+                <textarea id="skills" name="skills" rows="4" required placeholder="Enter your skills" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+            </fieldset>
+
+            <button type="submit" class="w-full  text-white py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">Generate Your Resume</button>
+        </form>
+
+        <div id="resumeOutput" class="bg-white p-6 rounded-lg shadow-md ">
+            <h2>Your resume</h2>
+            <!-- Resume Will Be Generated Below -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

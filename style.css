@@ -1,0 +1,125 @@
+.container.mx-auto.p-6 {
+    /* display: flex; */
+}
+
+#resumeForm {
+    width: 49%;
+    background: #F0F4EC;
+}
+
+#resumeOutput {
+    width: 49%;
+    background: #F0F4EC;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+}
+#resumeForm input,#resumeForm textarea {
+    margin: 8px 0;
+    background: #f0f4ec;
+    border: 1px solid #1a6c3f30;
+    font-size: 15px;
+    padding: 10px 19px;
+    box-shadow: 0 0;
+}
+
+#resumeForm label {
+    font-weight: 600;
+    padding-left: 5px;
+    color: gray;
+    display: none;
+}
+
+#resumeForm h3 {
+    /* text-align: center; */
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    color: #7b864c;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+legend {
+    font-size: 19px !important;
+    color: red;
+    color: #1A6C3F !important;
+    
+
+}
+button {
+    background: #1a6c3f !important;
+    border: 2px solid #1a6c3f;
+    transition: all 0.25s;
+     color:#fff !important;
+    font-weight:600;
+    
+}
+
+button:hover {
+    background: transparent !important;
+    border: 2px solid #1a6c3f;
+   color:#1a6c3f !important;
+}
+.mainTitle {
+    text-align: center;
+    color: #1a6c3f  !important;
+    text-transform: uppercase;
+}
+
+
+#resumeOutput h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #7b864c;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#resumeOutput img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.resumeOutput h2 {}
+
+#resumeOutput h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #7b864c;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#resumeOutput img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#resumeOutput h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color:#1a6c3f  !important;
+    margin: 6px 0 0px;
+}
+
+#resumeOutput strong {
+    color: #453e3e;
+}
+
+#resumeOutput p {
+    line-height: 48px;
+    font-size: 20px;
+    color: #283029;
+}
